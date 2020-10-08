@@ -40,7 +40,7 @@ C = np.dot(X, D)
 #decode
 X_decode = np.dot(C, D.T)
 
-#escale back to original data
+#scale back to original data
 X_decode = scaler.inverse_transform(X_decode)
 
 print("Encoding...")
